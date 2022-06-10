@@ -1,0 +1,94 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "a.out",
+      "type": "cppdbg",
+      "request": "launch",
+      // "program": "./a.out",
+      "program": "${workspaceFolder}/a.out",
+      // "args": ["`pkg-config", "--cflags", "--libs", "eigen3", "opencv`", "-std=c++17"],
+      "args": ["<","${workspaceFolder}/resource/sample.txt"],
+      // "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "gdb の再フォーマットを有効にする",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "name": "test_point_vs_line",
+      "type": "cppdbg",
+      "request": "launch",
+      // "program": "./a.out",
+      "program": "${workspaceFolder}/test_point_vs_line",
+      // "args": ["`pkg-config", "--cflags", "--libs", "eigen3", "opencv`", "-std=c++17"],
+      // "args": ["<","${workspaceFolder}/resource/camera_pos(x:[-1,1:10],y:[0,1:10],z:[0,0:10])"],
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "gdb の再フォーマットを有効にする",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "name": "test_point_vs_line_strict",
+      "type": "cppdbg",
+      "request": "launch",
+      // "program": "./a.out",
+      "program": "${workspaceFolder}/test_point_vs_line_strict",
+      // "args": ["`pkg-config", "--cflags", "--libs", "eigen3", "opencv`", "-std=c++17"],
+      // "args": ["<","${workspaceFolder}/resource/camera_pos(x:[-1,1:10],y:[0,1:10],z:[0,0:10])"],
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "gdb の再フォーマットを有効にする",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "name": "sample.out",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/sample.out",
+      // "args": ["`pkg-config", "--cflags", "--libs", "eigen3", "opencv`", "-std=c++17"],
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "gdb の再フォーマットを有効にする",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
